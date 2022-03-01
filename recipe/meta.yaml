@@ -1,5 +1,5 @@
 {% set name = "yandexcloud" %}
-{% set version = "0.144.0" %}
+{% set version = "0.145.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/yandexcloud-{{ version }}.tar.gz
-  sha256: 8ce7b185ded2a1f2d748902313640beebd6a443cbd73227224e431440c29ae7a
+  sha256: a74b2f5b3e1aef88153327a8af185e96060a65ced8eb796731e661d7fc7b9a40
 
 build:
   number: 0
