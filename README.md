@@ -1,11 +1,11 @@
-About yandexcloud
-=================
+About yandexcloud-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/yandexcloud-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/yandex-cloud/python-sdk
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/yandexcloud-feedstock/blob/main/LICENSE.txt)
 
 Summary: The Yandex.Cloud official SDK
 
