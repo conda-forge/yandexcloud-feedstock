@@ -1,5 +1,5 @@
 {% set name = "yandexcloud" %}
-{% set version = "0.288.0" %}
+{% set version = "0.293.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/yandexcloud-{{ version }}.tar.gz
-  sha256: 4d2825bf74304bb2f44cf215a4c30060c38dd16019d60b7dc9b3fcb259ef39e5
+  sha256: 30b913374ad082113637e27e27c5695ada2129cd6ef7139ead2897b93de1f775
 
 build:
   number: 0
@@ -22,9 +22,9 @@ requirements:
     # avoid dependency on importlib-metadata and stay noarch: python
     - python >=3.8
     - cryptography >=2.8
-    - grpcio >=1.59.3
-    - protobuf >=4.23.4
-    - googleapis-common-protos >=1.59.1
+    - grpcio >=1.64.0
+    - protobuf >=4.25.3
+    - googleapis-common-protos >=1.63.0
     - pyjwt >=1.7.1
     - requests >=2.22.0
     - six >=1.14.0
