@@ -12,14 +12,14 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - pip
     - python >=3.8
+    - pip
+    - setuptools
   run:
-    # avoid dependency on importlib-metadata and stay noarch: python
     - python >=3.8
     - cryptography >=2.8
     - grpcio >=1.64.0
