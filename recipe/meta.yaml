@@ -18,6 +18,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
     # avoid dependency on importlib-metadata and stay noarch: python
     - python >={{ python_min }}
