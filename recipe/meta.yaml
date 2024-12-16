@@ -1,5 +1,5 @@
 {% set name = "yandexcloud" %}
-{% set version = "0.295.0" %}
+{% set version = "0.329.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/yandexcloud-{{ version }}.tar.gz
-  sha256: 294ad3067c943dc0a6bf95299a8d872cc3cb557f374ed5fceeb92d6456370129
+  sha256: fb7a20095011d1c43fd16384a5e6df92686ff1ccc0a2f5ac40de986f1ffbf47d
 
 build:
   number: 0
@@ -21,13 +21,14 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - cryptography >=2.8
-    - grpcio >=1.64.0
-    - protobuf >=4.23.4
-    - googleapis-common-protos >=1.63.0
-    - pyjwt >=1.7.1
-    - requests >=2.22.0
-    - six >=1.14.0
+    - cryptography >=41.0.7,<43
+    - grpcio >=1.64.0,<2
+    - protobuf >=5.0.0,<6
+    - googleapis-common-protos >=1.63.0,<2
+    - pyjwt >=2.8.0,<3
+    - requests >=2.32.3,<3
+    - six >=1.16.0,<2
+    - grpcio-tools >=1.59.3
 
 test:
   imports:
