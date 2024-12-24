@@ -18,7 +18,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools
+    - setuptools >=61.2
   run:
     - python >={{ python_min }}
     - cryptography >=43.0.1
