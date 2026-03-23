@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: yandexcloud
-  version: "0.382.0"
+  version: 0.383.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/yandexcloud-${{ version }}.tar.gz
-  sha256: cd3df40e0db8daf7f39c7e2bddb54f250f757a187d6c2b32e9fef3c39c9dd571
+  sha256: 78a52789bf333f9664204024b625e47009ce72def727029a7c9e919016866d45
 
 build:
   number: 0
@@ -26,14 +26,13 @@ requirements:
     - python >=${{ python_min }}
     - cryptography >=44.0.0
     - grpcio >=1.68.1,<2
-    - protobuf >=5.29.1,<6
+    - protobuf >=6.31.1,<7
     - googleapis-common-protos >=1.66.0,<2
     - pyjwt >=2.10.1,<3
     - requests >=2.32.3,<3
     - six >=1.17.0,<2
-    - grpcio-tools >=1.68.1
+    - grpcio-tools >=1.76.0
     - deprecated >=1.2.18
-
 tests:
   - python:
       imports:
