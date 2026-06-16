@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: yandexcloud
-  version: "0.394.0"
+  version: "0.395.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/yandexcloud-${{ version }}.tar.gz
-  sha256: db624ce1b58f079afafbd0f02060486cbca12687b64e2ce21113a8166d03a248
+  sha256: ad588d2451b02c99de6cd50a7001940e4f80c40376bac52de34dbd497323120f
 
 build:
   number: 0
